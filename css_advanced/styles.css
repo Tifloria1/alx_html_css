@@ -19,6 +19,49 @@
 
 .hero__tags{ display:flex; justify-content:center; gap:40px; margin:0 0 28px; letter-spacing:.35em; font-weight:700; }
 
+/* =========================
+   QUOTE (2nd section)
+   ========================= */
+.quote{
+  background:#C271FF;         /* purple band */
+  color:#fff;
+  padding:72px 24px;
+}
+
+.quote__inner{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+}
+
+.quote__avatar{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  box-shadow:0 0 0 6px rgba(255,255,255,.18);
+  flex:0 0 auto;
+}
+
+.quote__text{ max-width:680px; }
+
+.quote blockquote{
+  margin:0 0 16px;
+  font-size:20px;
+  line-height:1.6;
+}
+
+.quote h3{ margin:0 0 4px; font-weight:700; }
+.quote p{ margin:0; opacity:.85; }
+
+@media (max-width:900px){
+  .quote__inner{ flex-direction:column; text-align:center; }
+}
+
+
 /* button */
 .btn{ display:inline-block; padding:14px 28px; border-radius:999px; text-decoration:none; font-weight:700; }
 .btn--primary{ background:#C271FF; color:#fff; box-shadow:0 14px 30px rgba(194,113,255,.45); }
