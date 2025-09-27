@@ -77,5 +77,10 @@
 .pro__name{ margin:16px 0 6px; font-weight:700; }
 .pro__meta{ margin:0; font-style:italic; font-size:14px; opacity:.85; }
 
-/* reset to white for next sections */
-.hero + section, .hero ~ section{ color:#111; background:#fff; }
+/* reset to white for next sections (except the quote band) */
+.hero + section:not(.quote),
+.hero ~ section:not(.quote){
+  color:#111;
+  background:#fff;
+}
+
