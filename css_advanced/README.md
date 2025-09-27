@@ -1,21 +1,14 @@
-# CSS, advanced — SmileSchool (ALX)
+# CSS, advanced – SmileSchool
 
-This project builds the SmileSchool homepage from a Figma design using **only HTML & CSS** (no external libraries).  
-Focus here is the HTML structure; styles come in later tasks.
+This project applies **CSS** to a static HTML page based on the “SmileSchool / Get schooled” design.
 
-## 🎯 Objectives
-- Recreate the page structure from the Figma.
-- Prepare clean, semantic markup ready for styling.
-- No external libraries (no Bootstrap, no Font Awesome, no frameworks).
+- **Figma**: (duplicate to drafts)  
+  Page: https://www.figma.com/design/dyYL6Ku4WG7vsdpwvlcJZC/Homepage?node-id=0-1  
+- **Images**: downloaded bundle added in `images/`
 
-## ✨ Design
-- Figma page: https://www.figma.com/design/dyYL6Ku4WG7vsdpwvlcJZC/Homepage?node-id=0-1
-- Duplicate to your Drafts to inspect spacing, fonts, and assets.
+## Goals
+- Keep semantic HTML from the “HTML, advanced” project
+- Add CSS progressively (header/banner, quote, videos, membership, FAQ, footer)
+- No frameworks; W3C-valid HTML/CSS
 
-Fonts noted in the brief:
-- **Source Sans Pro**
-- **Spin Cycle OT**
-
-> Some measurements in Figma are floats — rounding is fine.
-
-## 📁 Structure
+## Structure
