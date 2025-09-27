@@ -1,94 +1,169 @@
-/* ====== Base + variables ====== */
+/* Google font similar to the Figma look */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
 
 :root{
-  --navy:#071629;
-  --white:#ffffff;
-  --muted:rgba(255,255,255,.7);
-  --purple:#C271FF;  /* Figma accent */
+  --ink: #071629;        /* dark navy used in the design */
+  --white: #fff;
+  --purple: #C271FF;     /* accent */
 }
 
-*{ box-sizing:border-box; }
-html,body{ margin:0; }
-body{ font-family:"Source Sans Pro",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--white); background:#fff; }
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; }
+body{ font-family: 'Source Sans Pro', Arial, sans-serif; color: var(--ink); }
 
-/* ====== Header (sits over hero) ====== */
+/* Generic container */
+.container{
+  width: min(1100px, 90%);
+  margin-inline: auto;
+}
+
+/* ---------- Header ---------- */
 header{
-  position:absolute; /* overlay the banner */
-  top:0; left:0; right:0;
-  z-index:10;
+  position: absolute;   /* floats over the hero image */
+  inset-block-start: 0; /* top: 0; */
+  width: 100%;
+  z-index: 10;
 }
-header nav{
-  display:flex; align-items:center; justify-content:space-between;
-  max-width:1100px; margin:0 auto; padding:28px 16px;
-}
-header nav img{ height:28px; width:auto; display:block; }
-header nav ul{ list-style:none; margin:0; padding:0; display:flex; gap:36px; }
-header nav a{
-  color:var(--white); text-decoration:none; font-weight:600; font-size:12px; letter-spacing:.06em;
-  opacity:.95;
-}
-header nav a:hover{ opacity:1; }
 
-/* ====== HERO ====== */
+header nav.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 24px;
+}
+
+header img{
+  height: 28px;  /* small white SmileSchool logo */
+}
+
+header ul{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+header a{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .9;
+}
+
+header a:hover{ opacity: 1; }
+
+/* ---------- HERO (first section) ---------- */
 .hero{
-  /* background image + dark vignette like Figma */
+  color: var(--white);
+  /* bg image + dark gradient */
   background:
-    linear-gradient(180deg, rgba(7,22,41,0) 0%, rgba(7,22,41,.75) 65%, var(--navy) 100%),
-    url("./images/Object.png") center/cover no-repeat;
-  min-height:720px;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  text-align:center;
-  padding:140px 16px 120px; /* room for absolute header + bottom avatars */
-  color:var(--white);
+    linear-gradient(180deg, rgba(7,22,41,0) 0%, rgba(7,22,41,.55) 65%, var(--ink) 100%),
+    url('images/Object.png') center/cover no-repeat;
+  min-height: 760px;
+  display: grid;
+  align-content: end;  /* keeps the pros near the bottom like the mock */
+  padding-bottom: 120px;
 }
 
-/* Main hero copy */
+.hero .headline{
+  text-align: center;
+  margin-top: 140px;     /* drops content below the header */
+  margin-bottom: 80px;
+}
+
 .hero h1{
-  font-size: clamp(44px, 10vw, 96px);
-  line-height: .95;
-  margin: 0 0 12px;
   font-weight: 900;
+  line-height: 1.05;
+  font-size: clamp(48px, 8vw, 96px); /* responsive big title */
+  margin: 0 0 14px;
 }
-.hero .tag{
-  display:inline-block; margin:0 10px 26px; font-size:12px; letter-spacing:.24em; opacity:.85;
+
+.chips{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 10px 0 20px;
 }
+
+.chip{
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  opacity: .9;
+}
+
 .btn-primary{
-  display:inline-block; margin-top:4px;
-  background:var(--purple); color:#fff; border:0; border-radius:28px;
-  padding:12px 28px; font-weight:700; cursor:pointer;
-  box-shadow:0 10px 20px rgba(194,113,255,.3);
+  display: inline-block;
+  background: var(--purple);
+  color: var(--white);
+  border: none;
+  border-radius: 28px;
+  padding: 14px 28px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(194,113,255,.35);
 }
-.btn-primary:hover{ filter:brightness(1.05); }
 
-/* "Learn from the pros" row */
-.pros{ width:100%; max-width:1100px; margin-top:64px; }
-.pros h2{
-  font-size:22px; font-weight:700; margin:0 0 26px; color:var(--muted);
+.btn-primary:hover{
+  transform: translateY(-1px);
 }
-.pros .accent{ color:var(--purple); }
-.pros-list{
-  display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:40px;
+
+/* "Learn from the pros" line */
+.hero-sub{
+  text-align: center;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 30px;
 }
+
+.accent{ color: var(--purple); }
+
+/* People row */
+.pros{
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
 .pro{
-  display:flex; flex-direction:column; align-items:center; text-align:center;
-  color:var(--muted);
+  color: var(--white);
+  text-align: center;
 }
-.pro img{
-  width:150px; height:150px; object-fit:cover; border-radius:50%;
-  box-shadow:0 10px 30px rgba(0,0,0,.35);
-  margin-bottom:14px;
-}
-.pro h3{ color:#fff; font-size:16px; font-weight:700; margin:6px 0 4px; }
-.pro p{ margin:0; font-size:12px; opacity:.85; }
 
-/* ====== Responsive tweaks ====== */
-@media (max-width: 900px){
-  header nav ul{ gap:22px; }
-  .pros-list{ grid-template-columns:repeat(2,1fr); gap:28px; }
+.pro img{
+  width: 150px; height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 4px solid rgba(255,255,255,.08);
 }
-@media (max-width: 560px){
-  .hero{ padding:120px 16px 80px; }
-  .pros-list{ grid-template-columns:1fr; }
-  .pro img{ width:120px; height:120px; }
+
+.pro h3{
+  margin: 6px 0 6px;
+  font-weight: 700;
+}
+
+.pro p{
+  margin: 0;
+  font-size: 12px;
+  opacity: .85;
+}
+
+/* Small screens */
+@media (max-width: 900px){
+  .pros{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px){
+  header ul{ gap: 20px; }
+  .pros{ grid-template-columns: 1fr; }
+  .hero{ min-height: 680px; padding-bottom: 80px; }
+  .hero .headline{ margin-top: 110px; }
 }
