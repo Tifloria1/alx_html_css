@@ -1,4 +1,94 @@
-/* Temp styles just to confirm the file is loaded */
-:root { --brand: #8257e6; }
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Source Sans Pro", Arial, sans-serif; background: #f7f9fc; }
-h1 { color: var(--brand); }
+/* ====== Base + variables ====== */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+:root{
+  --navy:#071629;
+  --white:#ffffff;
+  --muted:rgba(255,255,255,.7);
+  --purple:#C271FF;  /* Figma accent */
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; }
+body{ font-family:"Source Sans Pro",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--white); background:#fff; }
+
+/* ====== Header (sits over hero) ====== */
+header{
+  position:absolute; /* overlay the banner */
+  top:0; left:0; right:0;
+  z-index:10;
+}
+header nav{
+  display:flex; align-items:center; justify-content:space-between;
+  max-width:1100px; margin:0 auto; padding:28px 16px;
+}
+header nav img{ height:28px; width:auto; display:block; }
+header nav ul{ list-style:none; margin:0; padding:0; display:flex; gap:36px; }
+header nav a{
+  color:var(--white); text-decoration:none; font-weight:600; font-size:12px; letter-spacing:.06em;
+  opacity:.95;
+}
+header nav a:hover{ opacity:1; }
+
+/* ====== HERO ====== */
+.hero{
+  /* background image + dark vignette like Figma */
+  background:
+    linear-gradient(180deg, rgba(7,22,41,0) 0%, rgba(7,22,41,.75) 65%, var(--navy) 100%),
+    url("./images/Object.png") center/cover no-repeat;
+  min-height:720px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center;
+  padding:140px 16px 120px; /* room for absolute header + bottom avatars */
+  color:var(--white);
+}
+
+/* Main hero copy */
+.hero h1{
+  font-size: clamp(44px, 10vw, 96px);
+  line-height: .95;
+  margin: 0 0 12px;
+  font-weight: 900;
+}
+.hero .tag{
+  display:inline-block; margin:0 10px 26px; font-size:12px; letter-spacing:.24em; opacity:.85;
+}
+.btn-primary{
+  display:inline-block; margin-top:4px;
+  background:var(--purple); color:#fff; border:0; border-radius:28px;
+  padding:12px 28px; font-weight:700; cursor:pointer;
+  box-shadow:0 10px 20px rgba(194,113,255,.3);
+}
+.btn-primary:hover{ filter:brightness(1.05); }
+
+/* "Learn from the pros" row */
+.pros{ width:100%; max-width:1100px; margin-top:64px; }
+.pros h2{
+  font-size:22px; font-weight:700; margin:0 0 26px; color:var(--muted);
+}
+.pros .accent{ color:var(--purple); }
+.pros-list{
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:40px;
+}
+.pro{
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  color:var(--muted);
+}
+.pro img{
+  width:150px; height:150px; object-fit:cover; border-radius:50%;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  margin-bottom:14px;
+}
+.pro h3{ color:#fff; font-size:16px; font-weight:700; margin:6px 0 4px; }
+.pro p{ margin:0; font-size:12px; opacity:.85; }
+
+/* ====== Responsive tweaks ====== */
+@media (max-width: 900px){
+  header nav ul{ gap:22px; }
+  .pros-list{ grid-template-columns:repeat(2,1fr); gap:28px; }
+}
+@media (max-width: 560px){
+  .hero{ padding:120px 16px 80px; }
+  .pros-list{ grid-template-columns:1fr; }
+  .pro img{ width:120px; height:120px; }
+}
