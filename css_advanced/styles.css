@@ -20,10 +20,11 @@
 .hero__tags{ display:flex; justify-content:center; gap:40px; margin:0 0 28px; letter-spacing:.35em; font-weight:700; }
 
 /* =========================
+/* =========================
    QUOTE (2nd section)
    ========================= */
 .quote{
-  background:#C271FF;         /* purple band */
+  background:#C271FF;   /* purple band */
   color:#fff;
   padding:72px 24px;
 }
