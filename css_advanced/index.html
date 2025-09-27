@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <img src="images/logo.png" alt="SmileSchool logo">
-      <ul>
+  <header class="site-header">
+    <nav class="nav">
+      <img class="site-logo" src="images/logo.png" alt="SmileSchool">
+      <ul class="nav__links">
         <li><a href="#">COURSES</a></li>
         <li><a href="#">PRICING</a></li>
         <li><a href="#">LOGIN</a></li>
@@ -20,20 +20,23 @@
     </nav>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Get schooled</h1>
-        <span class="tag">SMILES</span>
-        <span class="tag">GRIN</span>
-        <span class="tag">LAUGH</span>
-        <button class="btn-primary">REGISTER FOR FREE</button>
-      </div>
 
-      <!-- PROS -->
-     <div>
-      <h2 class="hero-sub">Learn <span class="accent">from the pros</span></h2>
+  <main>
+    <!-- HERO / BANNER -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">Get schooled</h1>
+
+        <div class="hero__tags">
+          <span>SMILES</span>
+          <span>GRIN</span>
+          <span>LAUGH</span>
+        </div>
+
+        <a class="btn btn--primary" href="#">REGISTER FOR FREE</a>
+
+        <h2 class="hero__subtitle"><span>Learn</span> from the pros</h2>
+
        <div class="pros">
           <div class="pro">
             <img src="images/1.png" alt="Phillip Massey portrait">
