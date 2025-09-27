@@ -84,8 +84,4 @@
   background:#fff;
 }
 
-/* force the quote band back to purple and restore its layout */
-.hero ~ .quote{ background:#C271FF; color:#fff; }
-.hero ~ .quote .quote__inner{ display:flex; align-items:center; justify-content:center; gap:40px; }
-
 
