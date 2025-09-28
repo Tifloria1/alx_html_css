@@ -76,65 +76,128 @@
 
 
     <!-- MOST POPULAR -->
-    <section>
-      <h2>Most popular tutorials</h2>
+<section class="videos" id="videos">
+  <div class="container">
+    <h2 class="section-title">Most <span>popular</span> tutorials</h2>
 
-      <div>
-        <img src="images/9.png" alt="Diagonal Smile thumbnail">
-        <h3>Diagonal Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-        <div>
-          <img src="images/1.png" alt="Phillip Massey author">
-          <h4>Phillip Massey</h4>
-        </div>
-        <div>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-        <p>8 min</p>
-      </div>
+    <div class="videos__grid">
 
-      <div>
-        <img src="images/8.png" alt="Happy Smile thumbnail">
-        <h3>Happy Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-        <div>
-          <img src="images/1.png" alt="Phillip Massey author">
-          <h4>Phillip Massey</h4>
-        </div>
-        <div>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-        <p>8 min</p>
-      </div>
+      <!-- Card 1 -->
+      <article class="video-card">
+        <figure class="video-card__thumb">
+          <img src="images/9.png" alt="Diagonal Smile thumbnail">
+          <button class="play" aria-label="Play video">
+            <img src="images/play.png" alt="">
+          </button>
+        </figure>
+        <h3 class="video-card__title">Diagonal Smile</h3>
+        <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
 
-      <div>
-        <img src="images/6.png" alt="Natural Smile thumbnail">
-        <h3>Natural Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-        <div>
-          <img src="images/1.png" alt="Phillip Massey author">
-          <h4>Phillip Massey</h4>
+        <div class="video-card__author">
+          <img src="images/1.png" alt="Phillip Massey">
+          <span>Phillip Massey</span>
         </div>
-        <div>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-        <p>8 min</p>
-      </div>
 
-      <div>
-        <img src="images/7.png" alt="Sad Smile thumbnail">
-        <h3>Sad Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-        <div>
-          <img src="images/1.png" alt="Phillip Massey author">
-          <h4>Phillip Massey</h4>
+        <div class="video-card__meta">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <span class="length">8 min</span>
         </div>
-        <div>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="video-card">
+        <figure class="video-card__thumb">
+          <img src="images/7.png" alt="Sad Smile thumbnail">
+          <button class="play" aria-label="Play video">
+            <img src="images/play.png" alt="">
+          </button>
+        </figure>
+        <h3 class="video-card__title">Sad Smile</h3>
+        <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+
+        <div class="video-card__author">
+          <img src="images/1.png" alt="Phillip Massey">
+          <span>Phillip Massey</span>
         </div>
-        <p>8 min</p>
-      </div>
-    </section>
+
+        <div class="video-card__meta">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <span class="length">8 min</span>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="video-card">
+        <figure class="video-card__thumb">
+          <img src="images/8.png" alt="Natural Smile thumbnail">
+          <button class="play" aria-label="Play video">
+            <img src="images/play.png" alt="">
+          </button>
+        </figure>
+        <h3 class="video-card__title">Natural Smile</h3>
+        <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+
+        <div class="video-card__author">
+          <img src="images/1.png" alt="Phillip Massey">
+          <span>Phillip Massey</span>
+        </div>
+
+        <div class="video-card__meta">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <span class="length">8 min</span>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="video-card">
+        <figure class="video-card__thumb">
+          <img src="images/6.png" alt="Happy Smile thumbnail">
+          <button class="play" aria-label="Play video">
+            <img src="images/play.png" alt="">
+          </button>
+        </figure>
+        <h3 class="video-card__title">Happy Smile</h3>
+        <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+
+        <div class="video-card__author">
+          <img src="images/1.png" alt="Phillip Massey">
+          <span>Phillip Massey</span>
+        </div>
+
+        <div class="video-card__meta">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <span class="length">8 min</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- MEMBERSHIP -->
     <section>
