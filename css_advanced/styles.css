@@ -221,16 +221,4 @@ body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Canta
 
 
 
-/* small screens: keep spacing neat */
-@media (max-width:640px){
-  .footer__top{ gap:20px; }
-  .footer__logo{ height:28px; }
-}
-
-
-/* stack logo/socials on small screens */
-@media (max-width:640px){
-  .site-footer__top{ flex-direction:column; gap:16px; }
-}
-
 
