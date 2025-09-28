@@ -178,3 +178,50 @@ body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Canta
   color:#fff !important;
 }
 
+/* ===== Footer ===== */
+.site-footer{
+  background:#071629;
+  color:#fff;
+  padding:52px 0;
+}
+
+.site-footer__top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.site-footer__logo{
+  height:30px;           /* looks like Figma scale */
+  width:auto;
+  display:block;
+}
+
+.site-footer__socials{
+  display:flex;
+  gap:24px;
+}
+
+.site-footer__socials a{
+  color:#fff;
+  font-size:20px;
+  line-height:1;
+  text-decoration:none;
+  transition:opacity .2s ease;
+}
+
+.site-footer__socials a:hover{ opacity:.75; }
+
+.site-footer__copy{
+  margin:36px 0 0;
+  text-align:center;
+  opacity:.6;            /* subtle, like the design */
+  font-size:14px;
+}
+
+/* stack logo/socials on small screens */
+@media (max-width:640px){
+  .site-footer__top{ flex-direction:column; gap:16px; }
+}
+
+
