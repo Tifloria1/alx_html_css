@@ -5,210 +5,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
   <title>SmileSchool – CSS Advanced</title>
-  <!-- OK if styles.css is empty for now -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <header class="site-header">
-  <nav class="nav container">
-    <img class="site-logo" src="images/logo.png" alt="SmileSchool">
-    <ul class="nav__links">
-      <li><a href="#">COURSES</a></li>
-      <li><a href="#">PRICING</a></li>
-      <li><a href="#">LOGIN</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="site-header">
+    <nav class="nav container">
+      <img class="site-logo" src="images/logo.png" alt="SmileSchool">
+      <ul class="nav__links">
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <h1 class="hero__title">Get schooled</h1>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">Get schooled</h1>
 
-      <div class="hero__tags">
-        <span>SMILES</span><span>GRIN</span><span>LAUGH</span>
+        <div class="hero__tags">
+          <span>SMILES</span><span>GRIN</span><span>LAUGH</span>
+        </div>
+
+        <a href="#" class="btn btn--primary">REGISTER FOR FREE</a>
+
+        <h2 class="hero__subtitle"><span>Learn</span> from the pros</h2>
+
+        <div class="pros">
+          <article class="pro">
+            <img class="pro__avatar" src="images/1.png" alt="Phillip Massey">
+            <h3 class="pro__name">Phillip Massey</h3>
+            <p class="pro__meta">« Smile of the year » 2018 - 2019</p>
+          </article>
+          <article class="pro">
+            <img class="pro__avatar" src="images/3.png" alt="Nannie Lawrence">
+            <h3 class="pro__name">Nannie Lawrence</h3>
+            <p class="pro__meta">Best « little smile » 2017</p>
+          </article>
+          <article class="pro">
+            <img class="pro__avatar" src="images/2.png" alt="Bruce Walters">
+            <h3 class="pro__name">Bruce Walters</h3>
+            <p class="pro__meta">Best « Friend Smile » live performance 2019</p>
+          </article>
+          <article class="pro">
+            <img class="pro__avatar" src="images/4.png" alt="Henry Hughes">
+            <h3 class="pro__name">Henry Hughes</h3>
+            <p class="pro__meta">« 24h smiles » winner 2016 - 2019</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <a href="#" class="btn btn--primary">REGISTER FOR FREE</a>
-
-      <h2 class="hero__subtitle"><span>Learn</span> from the pros</h2>
-
-      <div class="pros">
-        <article class="pro">
-          <img class="pro__avatar" src="images/1.png" alt="Phillip Massey">
-          <h3 class="pro__name">Phillip Massey</h3>
-          <p class="pro__meta">« Smile of the year » 2018 - 2019</p>
-        </article>
-        <article class="pro">
-          <img class="pro__avatar" src="images/3.png" alt="Nannie Lawrence">
-          <h3 class="pro__name">Nannie Lawrence</h3>
-          <p class="pro__meta">Best « little smile » 2017</p>
-        </article>
-        <article class="pro">
-          <img class="pro__avatar" src="images/2.png" alt="Bruce Walters">
-          <h3 class="pro__name">Bruce Walters</h3>
-          <p class="pro__meta">Best « Friend Smile » live performance 2019</p>
-        </article>
-        <article class="pro">
-          <img class="pro__avatar" src="images/4.png" alt="Henry Hughes">
-          <h3 class="pro__name">Henry Hughes</h3>
-          <p class="pro__meta">« 24h smiles » winner 2016 - 2019</p>
-        </article>
+    <!-- QUOTE -->
+    <section class="quote">
+      <div class="quote__inner">
+        <img class="quote__avatar" src="images/5.png" alt="weather presenter portrait">
+        <div class="quote__text">
+          <blockquote>
+            « Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun! »
+          </blockquote>
+          <h3>Person Name</h3>
+          <p>weather presenter</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-
-<!-- QUOTE -->
-<section class="quote">
-  <div class="quote__inner">
-    <img class="quote__avatar" src="./images/5.png" alt="weather presenter portrait">
-    <div class="quote__text">
-      <blockquote>
-        « Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun! »
-      </blockquote>
-      <h3>Person Name</h3>
-      <p>weather presenter</p>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- MOST POPULAR -->
-<section class="videos" id="videos">
-  <div class="container">
-    <h2 class="section-title">Most <span>popular</span> tutorials</h2>
+    <section class="videos" id="videos">
+      <div class="container">
+        <h2 class="section-title">Most <span>popular</span> tutorials</h2>
 
-    <div class="videos__grid">
+        <div class="videos__grid">
+          <article class="video-card">
+            <figure class="video-card__thumb">
+              <img src="images/9.png" alt="Diagonal Smile thumbnail">
+              <button class="play" aria-label="Play video"><img src="images/play.png" alt=""></button>
+            </figure>
+            <h3 class="video-card__title">Diagonal Smile</h3>
+            <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <div class="video-card__author">
+              <img src="images/1.png" alt="Phillip Massey"><span>Phillip Massey</span>
+            </div>
+            <div class="video-card__meta">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="length">8 min</span>
+            </div>
+          </article>
 
-      <article class="video-card">
-        <figure class="video-card__thumb">
-          <img src="images/9.png" alt="Diagonal Smile thumbnail">
-          <button class="play" aria-label="Play video">
-            <img src="images/play.png" alt="">
-          </button>
-        </figure>
-        <h3 class="video-card__title">Diagonal Smile</h3>
-        <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        <div class="video-card__author">
-          <img src="images/1.png" alt="Phillip Massey"><span>Phillip Massey</span>
+          <article class="video-card">
+            <figure class="video-card__thumb">
+              <img src="images/7.png" alt="Sad Smile thumbnail">
+              <button class="play" aria-label="Play video"><img src="images/play.png" alt=""></button>
+            </figure>
+            <h3 class="video-card__title">Sad Smile</h3>
+            <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <div class="video-card__author">
+              <img src="images/1.png" alt="Phillip Massey"><span>Phillip Massey</span>
+            </div>
+            <div class="video-card__meta">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="length">8 min</span>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <figure class="video-card__thumb">
+              <img src="images/8.png" alt="Natural Smile thumbnail">
+              <button class="play" aria-label="Play video"><img src="images/play.png" alt=""></button>
+            </figure>
+            <h3 class="video-card__title">Natural Smile</h3>
+            <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <div class="video-card__author">
+              <img src="images/1.png" alt="Phillip Massey"><span>Phillip Massey</span>
+            </div>
+            <div class="video-card__meta">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="length">8 min</span>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <figure class="video-card__thumb">
+              <img src="images/6.png" alt="Happy Smile thumbnail">
+              <button class="play" aria-label="Play video"><img src="images/play.png" alt=""></button>
+            </figure>
+            <h3 class="video-card__title">Happy Smile</h3>
+            <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <div class="video-card__author">
+              <img src="images/1.png" alt="Phillip Massey"><span>Phillip Massey</span>
+            </div>
+            <div class="video-card__meta">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="length">8 min</span>
+            </div>
+          </article>
         </div>
-        <div class="video-card__meta">
-          <div class="stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <span class="length">8 min</span>
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP -->
+    <section id="membership" class="membership">
+      <div class="container">
+        <h2 class="membership__title"><span>Free</span> membership</h2>
+
+        <div class="membership__grid">
+          <article class="membership__item">
+            <img class="membership__icon" src="images/smile.png" alt="">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+
+          <article class="membership__item">
+            <img class="membership__icon" src="images/smile.png" alt="">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+
+          <article class="membership__item">
+            <img class="membership__icon" src="images/smile.png" alt="">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+
+          <article class="membership__item">
+            <img class="membership__icon" src="images/smile.png" alt="">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
         </div>
-      </article>
 
-      <article class="video-card">
-        <figure class="video-card__thumb">
-          <img src="images/7.png" alt="Sad Smile thumbnail">
-          <button class="play" aria-label="Play video"><img src="images/play.png" alt=""></button>
-        </figure>
-        <h3 class="video-card__title">Sad Smile</h3>
-        <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        <div class="video-card__author">
-          <img src="images/1.png" alt="Phillip Massey"><span>Phillip Massey</span>
-        </div>
-        <div class="video-card__meta">
-          <div class="stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <span class="length">8 min</span>
-        </div>
-      </article>
+        <a href="#" class="btn btn--primary membership__cta">REGISTER FOR FREE</a>
+      </div>
+    </section>
 
-      <article class="video-card">
-        <figure class="video-card__thumb">
-          <img src="images/8.png" alt="Natural Smile thumbnail">
-          <button class="play" aria-label="Play video"><img src="images/play.png" alt=""></button>
-        </figure>
-        <h3 class="video-card__title">Natural Smile</h3>
-        <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        <div class="video-card__author">
-          <img src="images/1.png" alt="Phillip Massey"><span>Phillip Massey</span>
-        </div>
-        <div class="video-card__meta">
-          <div class="stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <span class="length">8 min</span>
-        </div>
-      </article>
-
-      <article class="video-card">
-        <figure class="video-card__thumb">
-          <img src="images/6.png" alt="Happy Smile thumbnail">
-          <button class="play" aria-label="Play video"><img src="images/play.png" alt=""></button>
-        </figure>
-        <h3 class="video-card__title">Happy Smile</h3>
-        <p class="video-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        <div class="video-card__author">
-          <img src="images/1.png" alt="Phillip Massey"><span>Phillip Massey</span>
-        </div>
-        <div class="video-card__meta">
-          <div class="stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <span class="length">8 min</span>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-  
-
-
-<!-- Membership -->
-<section id="membership" class="membership">
-  <div class="container">
-    <h2 class="membership__title"><span>Free</span> membership</h2>
-
-    <div class="membership__grid">
-      <article class="membership__item">
-        <img class="membership__icon" src="images/smile.png" alt="">
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </article>
-
-      <article class="membership__item">
-        <img class="membership__icon" src="images/smile.png" alt="">
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </article>
-
-      <article class="membership__item">
-        <img class="membership__icon" src="images/smile.png" alt="">
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </article>
-
-      <article class="membership__item">
-        <img class="membership__icon" src="images/smile.png" alt="">
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </article>
-    </div>
-
-    <a href="#" class="btn btn--primary membership__cta">REGISTER FOR FREE</a>
-  </div>
-</section>
-
-
-
-    <!-- FAQ -->
+    <!-- FAQ (unstyled for now) -->
     <section>
       <h2>F.A.Q</h2>
       <div>
