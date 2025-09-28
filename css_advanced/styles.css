@@ -178,55 +178,48 @@ body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Canta
   color:#fff !important;
 }
 
-/* ===== Footer ===== */
-.site-footer{
-  background:#071629;          /* dark navy */
-  color:#fff;
-  padding:48px 0 28px;         /* top spacing + a little bottom */
-  margin-top:80px;             /* breathing room above footer */
-}
 
+.site-footer{
+  background:#071629;
+  color:#fff;
+  padding:48px 0 28px;
+  margin-top:80px;
+}
 .footer__top{
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:space-between;   /* logo left, icons right */
 }
+.footer__logo{ height:32px; width:auto; display:block; }
 
-.footer__logo{
-  height:32px;                 /* tweak if your logo looks too small/big */
-  width:auto;
-  display:block;
-}
-
-.footer__social{
-  display:flex;
-  gap:18px;
-}
-
+.footer__social{ display:flex; gap:18px; }
 .footer__social a{
-  width:36px;
-  height:36px;
-  display:grid;
-  place-items:center;
+  width:36px; height:36px;
+  display:grid; place-items:center;
   border-radius:50%;
-  background:#ffffff;          /* white circle behind the icon */
-  color:#071629;               /* dark icon color like Figma */
+  background:#fff;                /* white circles */
+  color:#071629;                  /* dark icon color */
   text-decoration:none;
   box-shadow:0 6px 18px rgba(0,0,0,.25);
-  transition:transform .15s ease, box-shadow .15s ease;
+  transition:transform .15s, box-shadow .15s;
 }
-
 .footer__social a:hover{
   transform:translateY(-2px);
   box-shadow:0 10px 24px rgba(0,0,0,.28);
 }
 
 .footer__copy{
-  text-align:center;
+  text-align:center;              /* centered copyright */
   margin:24px 0 0;
   font-size:14px;
-  opacity:.4;                  /* faint copyright */
+  opacity:.4;                     /* faint like Figma */
 }
+
+@media (max-width:640px){
+  .footer__logo{ height:28px; }
+}
+
+
 
 /* small screens: keep spacing neat */
 @media (max-width:640px){
